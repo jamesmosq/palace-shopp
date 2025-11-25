@@ -15,6 +15,7 @@ class MoonshineUserSeeder extends Seeder
                 'name' => 'James',
                 'email' => 'mosquera@gmail.com',
                 'password' => Hash::make('password123'),
+                'moonshine_user_role_id' => 1,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -22,6 +23,7 @@ class MoonshineUserSeeder extends Seeder
                 'name' => 'Coordinador',
                 'email' => 'coordinador@palace.com',
                 'password' => Hash::make('password123'),
+                'moonshine_user_role_id' => 2,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -29,15 +31,7 @@ class MoonshineUserSeeder extends Seeder
                 'name' => 'Vendedor',
                 'email' => 'vendedor@palace.com',
                 'password' => Hash::make('password123'),
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-
-            [
-                'name' => 'Usuario Test',
-                'email' => 'test@palace.com',
-                'password' => Hash::make('password123'),
-                'role_id' => 2, // El ID del rol (ajusta según corresponda)
+                'moonshine_user_role_id' => 3,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
