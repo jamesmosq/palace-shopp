@@ -32,6 +32,15 @@ class MoonshineUserSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
+
+            [
+                'name' => 'Usuario Test',
+                'email' => 'test@palace.com',
+                'password' => Hash::make('password123'),
+                'role_id' => 2, // El ID del rol (ajusta según corresponda)
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
         ]);
     }
 }
